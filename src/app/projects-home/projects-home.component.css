@@ -62,7 +62,7 @@ span.capitalize::first-letter {
   margin: 20vh auto 0 auto;
   padding: 10px 10px 10px 10px;
   transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg);
-  box-shadow: 0;
+  box-shadow: 0 0 0;
   transition:
     transform 0.4s ease,
     box-shadow 0.4s ease;
