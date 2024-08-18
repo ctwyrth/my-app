@@ -1,1 +1,41 @@
-<p>projects-home works!</p>
+<div>
+  <h2 class="projectTitle">Project 1 - The Dynamic Business Card</h2>
+  <hr>
+  <form action="">
+    <fieldset>
+      <legend>Modify Your Business Card</legend>
+      <label for="firstNameInput">First Name</label><input type="text" id="firstNameInput" (input)="setProperty($event)"><br>
+      <label for="lastNameInput">Last Name</label><input type="text" id="lastNameInput" (input)="setProperty($event)"><br>
+      <label for="phoneNumberInput">Phone Number</label><input type="text" id="phoneNumberInput" (input)="setProperty($event)"><br>
+      <label for="mobileNumberInput">Mobile Number</label><input type="text" id="mobileNumberInput" (input)="setProperty($event)"><br>
+      <label for="jobTitleInput">Job Title</label><input type="text" id="jobTitleInput" (input)="setProperty($event)">
+    </fieldset>
+  </form>
+
+  <button class="card">
+    <div class="row clearfix">
+      <div class="left big">
+        Wk: {{ phoneNumber }}<br>
+        Mob: {{ mobileNumber }}
+      </div>
+      <div class="right">
+        <p>
+          <span class="big">E</span>rnst & <span class="big">S</span>ohn
+        </p>
+        <p>
+          <span class="med no-space">A W</span><span class="small no-space">iley </span><span class="med no-space">B</span><span class="small no-space">rand</span>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <p><span class="capitalize">{{ firstName }} </span><span class="capitalize">{{ lastName }}</span></p>
+      <p>{{ jobTitle }}</p>
+    </div>
+    <div class="row">
+      <p>
+        <span class="med">375 E</span><span class="small">xchange </span><span class="med">P</span><span class="small">lace </span><span class="med">N</span><span class="small">ew </span><span class="med">Y</span><span class="small">ork</span><span class="med">, N. Y. 10099 F</span><span class="small">ax </span><span class="med">201 555 6390 T</span><span class="small">elex </span><span class="med">10 4534</span>
+      </p>
+    </div>
+  </button>
+</div>
+
